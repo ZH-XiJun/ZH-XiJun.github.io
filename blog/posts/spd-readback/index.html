@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../../..">
       
       
         <link rel="next" href="../y1/">
@@ -174,7 +174,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link md-tabs__link--active">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         博客
       </a>
     </li>
@@ -270,20 +270,6 @@
           博客
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
-        索引
-      </a>
-    </li>
-  
-
-            
           
             
               
@@ -492,18 +478,31 @@
 <ol>
 <li>打开ResearchDownload并加载你准备好的Pac刷机包。打开设置，取消勾选所有镜像，保留FDL1、FDL2</li>
 <li>切换到Options一栏，取消勾选Repartition（十分重要！）</li>
-<li>切换到Flash Operation一栏，勾选上面的Active Read Flash。在下面列表勾选你需要回读的分区。如果该列表为空，可按空白处新建一个回读项，按照下表格式进行填写
-| Base（分区名） | Size（分区大小） | File（保存路径） |
-|-----------|------------|------------|
-| boot      | 0xFFFFFFFF | 双击即可选择     |
-如已存在，则勾选回读项前的对勾，并将Size一栏改为0xFFFFFFFF。完成配置之后，点击底部的OK关闭设置</li>
+<li>切换到Flash Operation一栏，勾选上面的Active Read Flash。在下面列表勾选你需要回读的分区。如果该列表为空，可按空白处新建一个回读项，按照下表格式进行填写</li>
 </ol>
+<table>
+<thead>
+<tr>
+<th>Base（分区名）</th>
+<th>Size（分区大小）</th>
+<th>File（保存路径）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boot</td>
+<td>0xFFFFFFFF</td>
+<td>双击即可选择</td>
+</tr>
+</tbody>
+</table>
+<p>如已存在，则勾选回读项前的对勾，并将Size一栏改为0xFFFFFFFF。完成配置之后，点击底部的OK关闭设置</p>
 <h3 id="_4">尝试回读</h3>
-<p>首先点击工具顶部的箭头图标，开始刷机
-将设备接入电脑，并想办法将设备进入深刷模式。部分设备有特定的bootkey可以进入（例如音量上下或其他按键组合），部分设备上电即有端口。如果您有adb连接，可尝试以下指令：
-<code>adb reboot autodloader</code>
-如正常，工具将会读到端口并开始刷机动作。如工具在<code>Checking Bautrate</code>后报错<code>Failed: User Canceled</code>而你确认没有接触不良，说明需要换一种方式进入深刷
-当Step一栏显示<code>R_分区名</code>时，说明已开始回读，但过一段时间工具就会报错<code>Failed: Opereation failed</code>，这是正常现象。点击工具顶部的方块键停止刷机，然后找到镜像的保存路径，这时镜像应以xxxx_COMx的命名格式保存。至此，回读完成</p>
+<p>首先点击工具顶部的箭头图标，开始刷机</p>
+<p>将设备接入电脑，并想办法将设备进入深刷模式。部分设备有特定的bootkey可以进入（例如音量上下或其他按键组合），部分设备上电即有端口。如果您有adb连接，可尝试以下指令：</p>
+<p><code>adb reboot autodloader</code></p>
+<p>如正常，工具将会读到端口并开始刷机动作。如工具在<code>Checking Bautrate</code>后报错<code>Failed: User Canceled</code>而你确认没有接触不良，说明需要换一种方式进入深刷</p>
+<p>当Step一栏显示<code>R_分区名</code>时，说明已开始回读，但过一段时间工具就会报错<code>Failed: Opereation failed</code>，这是正常现象。点击工具顶部的方块键停止刷机，然后找到镜像的保存路径，这时镜像应以xxxx_COMx的命名格式保存。至此，回读完成</p>
 
 
 
