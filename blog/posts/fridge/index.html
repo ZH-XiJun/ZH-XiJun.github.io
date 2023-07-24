@@ -9,17 +9,13 @@
       
       
       
-        <link rel="prev" href="../../..">
-      
-      
-        <link rel="next" href="../y1/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
     
     
       
-        <title>使用ResearchDownload为展讯机型提取镜像 - ZH-XiJun's GitHub pages</title>
+        <title>云米智能冰箱 破解记录 - ZH-XiJun's GitHub pages</title>
       
     
     
@@ -61,7 +57,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#researchdownload" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -94,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              使用ResearchDownload为展讯机型提取镜像
+              云米智能冰箱 破解记录
             
           </span>
         </div>
@@ -166,15 +162,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../spd-readback/" class="md-tabs__link">
         博客
       </a>
     </li>
@@ -246,16 +240,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
@@ -264,7 +256,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           博客
@@ -275,79 +267,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          使用ResearchDownload为展讯机型提取镜像
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../spd-readback/" class="md-nav__link">
         使用ResearchDownload为展讯机型提取镜像
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    准备工具
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    操作过程
-  </a>
-  
-    <nav class="md-nav" aria-label="操作过程">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    配置回读
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    尝试回读
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -415,14 +339,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    准备工具
+  <a href="#_2" class="md-nav__link">
+    配置
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
+    准备工作
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     操作过程
   </a>
   
@@ -430,15 +361,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    配置回读
+  <a href="#adb" class="md-nav__link">
+    打开adb
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    尝试回读
+  <a href="#root" class="md-nav__link">
+    ROOT
   </a>
   
 </li>
@@ -463,46 +394,44 @@
                   
 
 
-<h1 id="researchdownload">使用ResearchDownload为展讯机型提取镜像</h1>
-<p>本文，笔者将使用展讯ResearchDownload为你的展讯机型提取boot、recovery等其余分区镜像，为root做准备</p>
-<h2 id="_1">准备工具</h2>
-<ul>
-<li>配备Windows操作系统的电脑</li>
-<li>ResearchDownload工具</li>
-<li>需回读的展讯设备</li>
-<li>同SoC的展讯pac刷机包（不要求同一机型）</li>
-</ul>
-<h2 id="_2">操作过程</h2>
-<p>首先安装SPRD U2S DIAG所需驱动，请使用搜索引擎查找</p>
-<h3 id="_3">配置回读</h3>
-<ol>
-<li>打开ResearchDownload并加载你准备好的Pac刷机包。打开设置，取消勾选所有镜像，保留FDL1、FDL2</li>
-<li>切换到Options一栏，取消勾选Repartition（十分重要！）</li>
-<li>切换到Flash Operation一栏，勾选上面的Active Read Flash。在下面列表勾选你需要回读的分区。如果该列表为空，可按空白处新建一个回读项，按照下表格式进行填写</li>
-</ol>
+<h1 id="_1">云米智能冰箱 破解记录</h1>
+<p>注：该教程适配的云米冰箱型号为BCD-462WMBA，屏幕横向。若要查找竖屏版本的破解教程，请搜索其他教程</p>
+<h2 id="_2">配置</h2>
 <table>
 <thead>
 <tr>
-<th>Base（分区名）</th>
-<th>Size（分区大小）</th>
-<th>File（保存路径）</th>
+<th>Basic</th>
+<th>Spec Sheet</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>boot</td>
-<td>0xFFFFFFFF</td>
-<td>双击即可选择</td>
+<td>SoC</td>
+<td>MediaTek MT8163</td>
+</tr>
+<tr>
+<td>Android ver</td>
+<td>5.1 Lollipop</td>
 </tr>
 </tbody>
 </table>
-<p>如已存在，则勾选回读项前的对勾，并将Size一栏改为0xFFFFFFFF。完成配置之后，点击底部的OK关闭设置</p>
-<h3 id="_4">尝试回读</h3>
-<p>首先点击工具顶部的箭头图标，开始刷机</p>
-<p>将设备接入电脑，并想办法将设备进入深刷模式。部分设备有特定的bootkey可以进入（例如音量上下或其他按键组合），部分设备上电即有端口。如果您有adb连接，可尝试以下指令：</p>
-<p><code>adb reboot autodloader</code></p>
-<p>如正常，工具将会读到端口并开始刷机动作。如工具在<code>Checking Bautrate</code>后报错<code>Failed: User Canceled</code>而你确认没有接触不良，说明需要换一种方式进入深刷</p>
-<p>当Step一栏显示<code>R_分区名</code>时，说明已开始回读，但过一段时间工具就会报错<code>Failed: Opereation failed</code>，这是正常现象。点击工具顶部的方块键停止刷机，然后找到镜像的保存路径，这时镜像应以xxxx_COMx的命名格式保存。至此，回读完成</p>
+<h2 id="_3">准备工作</h2>
+<ul>
+<li>配有adb的电脑</li>
+<li>云米智能冰箱BCD-462WMBA</li>
+</ul>
+<h2 id="_4">操作过程</h2>
+<h3 id="adb">打开adb</h3>
+<p>首先需保证冰箱与电脑在同一网络内</p>
+<ol>
+<li>打开设置，找到关于软件，连按5下网络信息，将会出现两个选项。</li>
+<li>点击测试菜单，点击自检，点击版本信息，连按左侧文字多下，直到进入新的菜单</li>
+<li>点击最顶上的wifi adb模式，在弹出的提示框点OPEN，下一个弹窗不用动</li>
+<li>根据弹窗提示，在电脑端输入<code>adb connect ip地址</code>，成功后提示failed to authenticate to x.x.x.x:5555</li>
+<li>在冰箱上同意调试授权后，adb连接成功，可使用<code>adb install apk路径</code>安装应用</li>
+</ol>
+<h3 id="root">ROOT</h3>
+<p>由于该平板为安卓5，且为mtk处理器，可使用mtk easy su或一键root工具实现root，这里不再赘述</p>
 
 
 
