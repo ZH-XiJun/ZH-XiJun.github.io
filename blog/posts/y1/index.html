@@ -12,7 +12,7 @@
         <link rel="prev" href="../spd-readback/">
       
       
-        <link rel="next" href="../fridge/">
+        <link rel="next" href="../4p/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
@@ -384,6 +384,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    附件
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -393,6 +400,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4p/" class="md-nav__link">
+        小米米兔学习手表4Pro 破解记录
+      </a>
     </li>
   
 
@@ -495,6 +516,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    附件
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -549,34 +577,41 @@
 <h2 id="_2">操作过程</h2>
 <h3 id="adb">打开ADB</h3>
 <ol>
-<li>打开手表设置，长按“二维码”并上下滑动，然后长按“”进入密码输入界面</li>
+<li>打开手表设置，长按“二维码”并上下滑动，然后长按“关于”进入密码输入界面</li>
 <li>密码为<code>DkTs69</code>（区分大小写），确定后进入售后测试界面</li>
 <li>找到“开发者选项”并进入，启用顶部开关并打开其中的USB调试，即可启用ADB</li>
 <li>使用MicroUSB数据线接入到电脑，准备下一步操作</li>
 </ol>
 <h3 id="_3">安装软件</h3>
-<p>获得ADB调试权限之后，安装软件十分简单，只需要执行<code>adb install &lt;apk&gt;</code>即可
-但是，要想启动第三方应用，仍需安装第三方启动器</p>
+<p>获得ADB调试权限之后，安装软件十分简单，只需要执行<code>adb install &lt;apk&gt;</code>即可</p>
+<p>但是，要想启动第三方应用，仍需安装第三方启动器，或者于售后测试界面的“三方应用”功能打开app</p>
 <h3 id="root">ROOT</h3>
 <p><strong>ROOT有变砖风险，操作需谨慎！</strong></p>
 <ol>
-<li>下载<code>y1-crack.7z</code>并解压，启动内置的SP Flash Tool，并选择scatter为压缩包内的<code>MT6739_Android_scatter.txt</code></li>
-<li>此时工具理应默认勾选了boot分区，点击顶部的“下载”按钮</li>
+<li><a href="#_4">下载</a><code>y1-crack.7z</code>并解压，找到里面的boot.img，将其传到手表上</li>
+<li>在手表上安装<a href="https://github.com/topjohnwu/magisk/releases">Magisk</a>，然后在里面修补boot，注意安装过程中如有选项要勾选，请全部取消勾选后继续</li>
+<li>将修补后的boot传到电脑，然后启动内置的SP Flash Tool，并选择scatter为压缩包内的<code>MT6739_Android_scatter.txt</code></li>
+<li>此时在工具上找到boot分区，双击右侧空白处选择镜像，然后点击顶部的“下载”按钮</li>
 <li>将手表连接电脑并重启</li>
 <li>等待程序开始跑条。出现绿色大对勾后，可拔下数据线重启手表</li>
-<li>在手表上<a href="#_3">安装</a>压缩包内的<code>delta.apk</code>并启动Magisk Delta。如正常，将会提示你修复运行环境，点击确定即可</li>
+<li>手表开机后，打开Magisk，修复运行环境即可</li>
 </ol>
+<h3 id="_4">附件</h3>
+<p>在<a href="https://github.com/ZH-XiJun/ZH-XiJun.github.io/releases/tag/y1-crack">此</a>下载，该Release包含</p>
+<ul>
+<li>y1-crack.7z</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2023</span>
       
         <br>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 24, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2023</span>
       
     
   </small>
